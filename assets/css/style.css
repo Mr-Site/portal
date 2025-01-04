@@ -4,6 +4,7 @@
 }
 
 *::selection {
+  font-family: iransansWeb;
   background-color: #63b624;
   color: #fff;
 }
@@ -828,4 +829,465 @@ main {
   transform: skewY(-6deg);
   transform-origin: right top;
   opacity: 0.1;
+}
+
+/* بخش هشتم */
+
+.homePageS8 ol {
+  list-style-type: persian;
+}
+
+.homePageS8 .titre {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.homePageS8 .titre h3 {
+  font-size: 1.6rem;
+  color: #4b515a;
+}
+
+.homePageS8 .titre p {
+  font-size: 1.1rem;
+  color: #8e939b;
+}
+
+/* زیرمنو ها */
+
+.homePageS8 .accordion {
+  width: 100%;
+  font-family: iransansWeb;
+  background-color: #fff;
+  color: #4b515a;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: right;
+  outline: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.homePageS8 .menuActive {
+  border-radius: 5px 5px 0 0;
+}
+
+.homePageS8 .menuActive {
+  color: #437ff6;
+  border-bottom: 1px solid #dee1e4;
+  box-shadow: 0 -5px 10px rgba(57, 56, 56, 0.1);
+}
+
+.homePageS8 .menuActive .accordion::after {
+  color: #437ff6;
+}
+
+.homePageS8 .accordion:after {
+  content: "\002B";
+  color: #4b515a;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.homePageS8 .menuActive:after {
+  content: "\2212";
+  color: #437ff6;
+}
+
+.homePageS8 .panel {
+  font-size: 0.9rem;
+  color: #8e939b;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  border-radius: 0 0 10px 10px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.homePageS8 .panel .contentPanel li {
+  padding: 10px 0;
+}
+
+/* بخش نهم */
+
+.homePageS9 {
+  padding: 100px 0;
+  background-image: url(../media/images/home-s9-bg.png);
+  background-repeat: no-repeat;
+  background-position: right top 99px;
+}
+
+.homePageS9 .titre {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homePageS9 .titre h3 {
+  font-size: 1.6rem;
+  color: #4b515a;
+}
+
+.homePageS9 .titre p {
+  font-size: 1.1rem;
+  color: #8e939b;
+}
+
+.homePageS9 .kadrFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homePageS9 .kadrFlex .itemFlex {
+  width: calc(30% - 80px);
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.homePageS9 .kadrFlex .itemFlex h3 {
+  color: #717cb3;
+  transition: 0.3s;
+}
+
+.homePageS9 .kadrFlex .itemFlex .kadrAks img {
+  border-radius: 5px;
+}
+
+.homePageS9 .kadrFlex .itemFlex:hover h3 {
+  color: #437ff6;
+}
+
+.homePageS9 .kadrDokme {
+  text-align: center;
+  margin: 50px;
+}
+
+.homePageS9 .kadrDokme .dokme {
+  background-color: #6898f8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(104, 152, 248, 0.5);
+  transition: 0.3s;
+}
+
+.homePageS9 .kadrDokme .dokme:hover {
+  background-color: #437ff6;
+}
+
+.homePageS9 .kadrDokme .dokme:active {
+  box-shadow: 0 0 20px transparent;
+}
+
+/* بخش دهم */
+
+.homePageS10 .kadrFlex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.homePageS10 .kadrFlex .itemFlex1 {
+  width: 50%;
+}
+
+.homePageS10 .kadrFlex .itemFlex1 strong {
+  color: #4b515a;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.homePageS10 .kadrFlex .itemFlex1 p {
+  font-size: 1.1rem;
+  color: #8e939b;
+}
+
+.homePageS10 .kadrFlex .itemFlex2 .dokme {
+  position: relative;
+  font-size: 1.1rem;
+  background-color: #6898f8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(104, 152, 248, 0.5);
+  z-index: 3;
+  transition: 0.3s;
+}
+
+.homePageS10 .kadrFlex .itemFlex2 .dokme:hover {
+  background-color: #437ff6;
+}
+
+.homePageS10 .kadrFlex .itemFlex2 .dokme:active {
+  box-shadow: 0 0 20px transparent;
+}
+
+.homePageS10 .kadrFlex::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 100px;
+  width: 160px;
+  background: linear-gradient(-35deg, rgba(104, 152, 248, 0) 30%, #6898f8);
+  border-radius: 0 30px 0 0;
+  transform: skewY(-6deg);
+  transform-origin: right top;
+  opacity: 0.1;
+}
+
+.homePageS10 .kadrFlex::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 180px;
+  width: 190px;
+  background: linear-gradient(-35deg, rgba(104, 152, 248, 0) 30%, #6898f8);
+  border-radius: 0 30px 0 0;
+  transform: skewY(-6deg);
+  transform-origin: right top;
+  opacity: 0.1;
+}
+
+/* بخش یازدهم */
+
+.homePageS11 {
+  padding: 100px 0;
+}
+
+.homePageS11 .titre {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.homePageS11 .titre h4 {
+  font-size: 1.6rem;
+  color: #4b515a;
+  margin: 0;
+}
+
+.homePageS11 .titre p {
+  font-size: 1.1rem;
+  color: #8e939b;
+}
+
+.homePageS11 .kadrFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homePageS11 .kadrFlex .itemFlex {
+  text-align: center;
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.homePageS11 .kadrFlex .itemFlex a {
+  display: block;
+  padding: 20px;
+}
+
+.homePageS11 .kadrFlex .itemFlex .kadrContent div:first-child {
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4b515a;
+  transition: 0.3s;
+}
+
+.homePageS11 .kadrFlex .itemFlex:hover .kadrContent div:first-child,
+.homePageS11 .kadrFlex .itemFlex:hover .kadrContent div:last-child {
+  color: #24272c;
+}
+
+.homePageS11 .kadrFlex .itemFlex .kadrContent div:last-child {
+  font-size: 0.875rem;
+  color: #8e939b;
+  transition: 0.3s;
+}
+
+/* فوتر */
+
+footer {
+  padding: 50px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+footer .kadrFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer .kadrFlex .itemFlex {
+  width: 15%;
+}
+
+footer .kadrFlex .itemFlex h4 {
+  margin: 0;
+  color: #24272c;
+  font-size: 1.25rem;
+}
+
+footer .kadrFlex .itemFlex .footerList {
+  margin: 0;
+  padding: 0;
+}
+
+footer .kadrFlex .itemFlex .footerList li {
+  margin: 15px 0;
+}
+
+footer .kadrFlex .itemFlex .footerList li .footerLink {
+  color: #8e939b;
+  transition: 0.3s;
+}
+
+footer .kadrFlex .itemFlex .footerList li:hover .footerLink {
+  color: #0fbcf1;
+}
+
+footer .kadrFlex .itemFlex5 {
+  width: 30%;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact {
+  margin-top: 20px;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact > div {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact > div > i {
+  font-size: 1rem;
+  color: #8e939b;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact > div span {
+  margin-right: 20px;
+  color: #8e939b;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact > div span a {
+  color: #4b515a;
+  transition: 0.3s;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact > div span:hover a {
+  color: #24272c;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact .socialIcon {
+  display: flex;
+  align-items: center;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact .socialIcon > div a i {
+  transition: 0.3s;
+  font-size: 1rem;
+  color: #8e939b;
+  padding: 10px;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact .socialIcon > div:hover a i {
+  color: #4b515a;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact .dokme {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #8e939b;
+  background-color: #dfe4e9;
+  transition: 0.3s;
+}
+
+footer .kadrFlex .itemFlex5 .kadrContact .dokme:hover {
+  background-color: #d1d3d5;
+}
+
+footer .footerBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  font-size: 1.1rem;
+}
+
+footer .footerBottom p {
+  color: #8e939b;
+}
+
+footer .footerBottom a {
+  color: #0fbcf1;
+  transition: 0.3s;
+}
+
+footer .footerBottom a:hover {
+  color: #437ff6;
+}
+
+/* برای عرض ۱۴۰۰ پیکسل تا ۱۶۰۰ پیکسل */
+
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 90%;
+  }
+
+  #baner #kadrMatnBaner {
+    max-width: 40%;
+  }
+
+  .homePageS4 .itemFlex1 {
+    width: 50%;
+  }
+
+  .homePageS4 .itemFlex2 {
+    width: 40%;
+  }
+
+  .homePageS4 .rightGradient::before {
+    width: 130px;
+  }
+
+  .homePageS4 .leftGradient::before {
+    width: 100px;
+  }
+
+  .homePageS4 .leftGradient::after {
+    width: 200px;
+  }
+}
+
+/* برای عرض ۱۲۰۰ پیکسل تا ۱۴۰۰ پیکسل */
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 95%;
+  }
 }
