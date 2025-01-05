@@ -1476,6 +1476,13 @@ footer .footerBottom a:hover {
   }
   /* تنظیمات منو موبایل و تبلت */
 
+  .menuMobile .navKadrLeft {
+    width: calc(100% - 100px);
+    display: block;
+    padding: 15px 50px;
+    margin: auto;
+  }
+
   .container {
     overflow: hidden;
   }
@@ -1487,6 +1494,7 @@ footer .footerBottom a:hover {
   .kadrDisableScroll,
   .kadrMenuMobile {
     display: block;
+    overflow: scroll;
   }
 
   .iconMenuMobile {
@@ -1690,14 +1698,6 @@ footer .footerBottom a:hover {
     font-size: 14px;
   }
 
-  .menuMobile .navKadrLeft {
-    display: block;
-    width: calc(100% - 100px);
-    padding: 15px 50px;
-    position: absolute;
-    bottom: 25px;
-  }
-
   #baner {
     display: flex;
     justify-content: center;
@@ -1795,6 +1795,10 @@ footer .footerBottom a:hover {
 @media screen and (max-width: 576px) {
   html {
     font-size: 13px;
+  }
+
+  .menuMobile .navKadrLeft {
+    width: calc(100% - 100px);
   }
 
   .kadrMenuMobile {
