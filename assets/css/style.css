@@ -13,6 +13,13 @@ body {
   direction: rtl;
   font-family: iransansWeb;
   margin: 0;
+  overflow-x: hidden;
+}
+
+.iconMenuMobile,
+.kadrDisableScroll,
+.kadrMenuMobile {
+  display: none;
 }
 
 p {
@@ -38,6 +45,10 @@ ul {
   margin: auto;
 }
 
+.no-scroll {
+  overflow: hidden; /* حذف اسکرول عمودی */
+  height: 100vh; /* جلوگیری از تغییر ارتفاع صفحه */
+}
 /* بنر */
 
 #baner {
@@ -961,6 +972,7 @@ main {
 
 .homePageS9 .kadrFlex .itemFlex .kadrAks img {
   border-radius: 5px;
+  width: 100%;
 }
 
 .homePageS9 .kadrFlex .itemFlex:hover h3 {
@@ -1289,5 +1301,623 @@ footer .footerBottom a:hover {
 @media screen and (max-width: 1400px) {
   .container {
     width: 95%;
+  }
+
+  nav .navKadrRight {
+    max-width: 70%;
+  }
+
+  .navKadrLeft {
+    width: 20%;
+  }
+
+  .homePageS1 ul {
+    max-width: 40%;
+  }
+
+  .homePageS2 .kadrFlex {
+    width: 80%;
+  }
+
+  .homePageS4 .rightGradient::before {
+    position: absolute;
+  }
+
+  .homePageS4 .leftGradient::after {
+    position: absolute;
+  }
+}
+
+/* برای عرض ۹۹۲ پیکسل تا ۱۲۰۰ پیکسل */
+
+@media screen and (max-width: 1200px) {
+  #baner #kadrMatnBaner {
+    max-width: 60%;
+  }
+
+  nav .navKadrRight {
+    max-width: 80%;
+  }
+
+  nav .navKadrRight .kadrMenu .navItem {
+    padding: 15px;
+  }
+
+  .homePageS1 ul {
+    max-width: 50%;
+  }
+
+  .homePageS2 .kadrFlex {
+    width: 85%;
+  }
+  .homePageS4 .itemFlex2 {
+    transform: perspective(0) rotateY(0) rotateX(0) rotate(0);
+  }
+
+  .homePageS4 .itemFlex2 img:first-child {
+    display: none;
+  }
+
+  footer .footerBottom {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* برای عرض ۷۶۸ پیکسل تا ۹۹۲ پیکسل */
+
+@media screen and (max-width: 992px) {
+  #baner #kadrMatnBaner {
+    max-width: 70%;
+  }
+
+  header {
+    position: static;
+  }
+
+  nav .navKadrRight {
+    width: 60%;
+  }
+
+  nav .navKadrRight .kadrMenu {
+    display: none;
+  }
+
+  .navKadrLeft {
+    width: 30%;
+  }
+
+  .homePageS1 ul {
+    max-width: 60%;
+  }
+
+  .homePageS1 .kadrImgS1 img {
+    width: 100%;
+  }
+
+  .homePageS2 .kadrFlex {
+    width: 100%;
+  }
+
+  .homePageS2 .kadrFlex .itemFlex {
+    width: calc(48% - 30px);
+    padding: 25px 15px;
+  }
+
+  .homePageS4 .kadrFlex {
+    flex-direction: column-reverse;
+  }
+
+  .homePageS4 .itemFlex1 {
+    width: 100%;
+  }
+
+  .homePageS4 .itemFlex2 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .homePageS5 .kadrFlex {
+    flex-wrap: wrap;
+  }
+  .homePageS5 .kadrFlex .itemFlex {
+    width: 50%;
+  }
+
+  .homePageS5 .kadrFlex .itemFlex4 {
+    width: 100%;
+  }
+
+  .homePageS6 .kadrFlex .itemFlex {
+    width: 30%;
+  }
+
+  .homePageS7 .kadrFlex .itemFlex2 {
+    width: 70%;
+    font-size: 1.4rem;
+  }
+
+  .homePageS7 .kadrFlex .itemFlex3 i {
+    font-size: 1.6rem;
+  }
+
+  .homePageS9 .kadrFlex {
+    flex-wrap: wrap;
+  }
+
+  .homePageS9 .kadrFlex .itemFlex {
+    width: calc(45% - 80px);
+    margin-bottom: 50px;
+  }
+
+  .homePageS9 .kadrDokme .dokme {
+    font-size: 1.3rem;
+  }
+
+  .homePageS11 .kadrFlex {
+    flex-wrap: wrap;
+  }
+
+  .homePageS11 .kadrFlex .itemFlex {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  footer .kadrFlex {
+    flex-wrap: wrap;
+  }
+
+  footer .kadrFlex .itemFlex {
+    width: 25%;
+  }
+
+  footer .kadrFlex .itemFlex5 {
+    width: 100%;
+  }
+  /* تنظیمات منو موبایل و تبلت */
+
+  .iconMenuMobile {
+    display: flex;
+  }
+
+  .kadrDisableScroll,
+  .kadrMenuMobile {
+    display: block;
+  }
+
+  .iconMenuMobile {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .iconMenuMobile i {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #8e939b;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #eff2f5;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .iconMenuMobile .iconOpenMenu {
+    visibility: visible;
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  .iconMenuMobile .iconCloseMenu {
+    visibility: hidden;
+    z-index: 0;
+    transition: 0.3s;
+  }
+
+  .kadrDisableScroll {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #8e939b;
+    z-index: 9998;
+    opacity: 0.2;
+    transition: 0.3s;
+  }
+
+  .kadrMenuMobile {
+    position: absolute;
+    right: -500px;
+    top: 0;
+    bottom: 0;
+    width: 40%;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+
+  .kadrMenuMobile .menuHead {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #437ff6;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  .kadrMenuMobile .menuHead > div:first-child {
+    margin-left: 20px;
+  }
+
+  .kadrMenuMobile .menuHead > div:last-child {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .kadrMenuMobile .menuHead h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .kadrMenuMobile .menuHead p {
+    margin: 0;
+  }
+
+  .kadrMenuMobile .menuMobile {
+    padding: 50px 0;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile {
+    margin: 0;
+    padding: 0;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile {
+    padding: 15px 50px;
+    border-bottom: 1px solid #fbf4eb;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile > a {
+    color: #8e939b;
+    transition: 0.3s;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile:active > a {
+    color: #437ff6;
+  }
+
+  /* زیرمنو ها */
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile .accordion {
+    width: 100%;
+    font-family: iransansWeb;
+    background-color: #fff;
+    color: #4b515a;
+    cursor: pointer;
+    border: none;
+    text-align: right;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile .menuActive {
+    color: #437ff6;
+    font-size: 1rem;
+    padding: 15px 0;
+  }
+
+  .kadrMenuMobile
+    .menuMobile
+    .listItemMobile
+    .itemMobile
+    .menuActive
+    .accordion::after {
+    color: #437ff6;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile .accordion:after {
+    content: "\002B";
+    color: #8e939b;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile .menuActive:after {
+    content: "\2212";
+    color: #437ff6;
+  }
+
+  .kadrMenuMobile .menuMobile .listItemMobile .itemMobile .panel {
+    font-size: 0.9rem;
+    color: #8e939b;
+    text-align: right;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .kadrMenuMobile
+    .menuMobile
+    .listItemMobile
+    .itemMobile
+    .panel
+    .contentPanel
+    ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .kadrMenuMobile
+    .menuMobile
+    .listItemMobile
+    .itemMobile
+    .panel
+    .contentPanel
+    li {
+    padding: 10px 0;
+    border-bottom: 1px solid #fbf4eb;
+  }
+
+  .kadrMenuMobile
+    .menuMobile
+    .listItemMobile
+    .itemMobile
+    .panel
+    .contentPanel
+    li
+    a {
+    color: #8e939b;
+  }
+}
+
+/* برای عرض ۵۷۶ پیکسل تا ۷۶۸ پیکسل */
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .menuMobile .navKadrLeft {
+    display: block;
+    width: calc(100% - 100px);
+    padding: 15px 50px;
+    position: absolute;
+    bottom: 25px;
+  }
+
+  #baner {
+    display: flex;
+    justify-content: center;
+  }
+
+  #baner #kadrMatnBaner {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #baner #kadrMatnBaner span {
+    margin-left: 15px;
+    white-space: nowrap;
+  }
+
+  #baner #kadrMatnBaner a {
+    white-space: nowrap;
+  }
+
+  nav .navKadrRight {
+    width: 45%;
+  }
+
+  .navKadrLeft {
+    width: 35%;
+  }
+
+  .kadrMenuMobile {
+    width: 50%;
+  }
+
+  .homePageS1 ul {
+    flex-direction: column;
+  }
+
+  .homePageS1 ul li {
+    margin-bottom: 10px;
+  }
+
+  .homePageS2 .kadrFlex {
+    flex-direction: column;
+  }
+
+  .homePageS2 .kadrFlex .itemFlex {
+    width: calc(100% - 30px);
+  }
+
+  .homePageS5 .kadrFlex {
+    justify-content: center;
+  }
+
+  .homePageS5 .kadrFlex .itemFlex {
+    width: 70%;
+  }
+
+  .homePageS5 .kadrMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .homePageS6 .kadrFlex {
+    flex-wrap: wrap;
+  }
+
+  .homePageS6 .kadrFlex .itemFlex {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  .homePageS7 .kadrFlex {
+    padding: 15px 40px;
+  }
+
+  .homePageS10 .kadrFlex {
+    padding: 40px 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .homePageS10 .kadrFlex .itemFlex {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  footer .kadrFlex .itemFlex {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+}
+
+/* برای عرض ۳۲۰ پیکسل تا ۵۷۶ پیکسل */
+
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+
+  .kadrMenuMobile {
+    width: 85%;
+  }
+
+  #baner #kadrMatnBaner {
+    flex-direction: column;
+  }
+
+  #baner #kadrMatnBaner span {
+    text-align: center;
+    margin-bottom: 25px;
+    white-space: wrap;
+  }
+
+  nav .navKadrRight {
+    display: flex;
+    align-items: center;
+  }
+
+  nav .navKadrRight::after {
+    content: "پرتال";
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4b515a;
+    margin-right: 15px;
+  }
+
+  .iconMenuMobile {
+    width: 30%;
+  }
+
+  .navKadrLeft {
+    display: none;
+  }
+
+  .homePageS1 p {
+    display: none;
+  }
+
+  .homePageS1 a {
+    margin-top: 25px;
+  }
+
+  .homePageS1 ul {
+    padding: 0;
+  }
+
+  .homePageS4 .itemFlex2 {
+    margin-right: 0;
+  }
+
+  .homePageS4 .itemFlex2 img:last-child {
+    width: 100%;
+  }
+
+  .homePageS4 .itemFlex1 h3,
+  .homePageS4 .itemFlex1 p {
+    text-align: center;
+  }
+
+  .homePageS4 .itemFlex1 > div:last-child {
+    text-align: center;
+  }
+
+  .homePageS5 .kadrFlex .itemFlex {
+    width: 100%;
+  }
+
+  .homePageS5 .kadrFlex .itemFlex {
+    flex-direction: column;
+  }
+
+  .homePageS5 .kadrFlex .itemFlex4 div:first-child,
+  .homePageS5 .kadrFlex .itemFlex4 div:last-child {
+    width: 100%;
+  }
+
+  .homePageS5 .kadrMore > div:first-child {
+    display: none;
+  }
+
+  .kadrMore div {
+    text-align: center !important;
+  }
+
+  .homePageS6 .titre p {
+    display: none;
+  }
+
+  .homePageS6 .kadrFlex .itemFlex {
+    width: 100%;
+  }
+
+  .homePageS7 .kadrFlex {
+    flex-direction: column;
+  }
+
+  .homePageS7 .kadrFlex .itemFlex {
+    width: 100%;
+  }
+
+  .homePageS7 .kadrFlex .itemFlex1 {
+    display: none;
+  }
+
+  .homePageS7 .kadrFlex .itemFlex3 {
+    text-align: center;
+  }
+
+  .homePageS8 .accordion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .homePageS9 .kadrFlex .itemFlex {
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  .homePageS11 .kadrFlex .itemFlex {
+    width: 100%;
+  }
+
+  footer .kadrFlex .itemFlex {
+    width: 100%;
   }
 }
