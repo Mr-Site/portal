@@ -1787,6 +1787,14 @@ footer .footerBottom a:hover {
     margin-bottom: 25px;
   }
 
+  .homePageS11 .kadrFlex {
+    justify-content: space-evenly;
+  }
+
+  .homePageS11 .kadrFlex .itemFlex {
+    width: calc(50% - 40px);
+  }
+
   footer .kadrFlex .itemFlex {
     width: 50%;
     margin-bottom: 25px;
@@ -1929,7 +1937,7 @@ footer .footerBottom a:hover {
   }
 
   .homePageS11 .kadrFlex .itemFlex {
-    width: 100%;
+    width: 90%;
   }
 
   footer .kadrFlex .itemFlex {
