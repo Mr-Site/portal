@@ -1913,11 +1913,11 @@ footer .footerBottom a:hover {
     width: 100%;
   }
 
-  .homePageS11 .kadrFlex .itemFlex {
-    width: 100%;
+  footer .kadrFlex .itemFlex {
+    width: 50%;
   }
 
-  footer .kadrFlex .itemFlex {
+  footer .kadrFlex .itemFlex5 {
     width: 100%;
   }
 }
