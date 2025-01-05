@@ -1476,6 +1476,10 @@ footer .footerBottom a:hover {
   }
   /* تنظیمات منو موبایل و تبلت */
 
+  .container {
+    overflow: hidden;
+  }
+
   .iconMenuMobile {
     display: flex;
   }
