@@ -1394,7 +1394,6 @@ footer .footerBottom a:hover {
   .homePageS1 .kadrImgS1 img {
     width: 100%;
   }
-
   .homePageS2 .kadrFlex {
     width: 100%;
   }
@@ -1461,6 +1460,10 @@ footer .footerBottom a:hover {
   .homePageS11 .kadrFlex .itemFlex {
     width: 45%;
     margin-bottom: 50px;
+  }
+
+  .homePageS11 .kadrFlex .itemFlex img {
+    width: 100%;
   }
 
   footer .kadrFlex {
@@ -1918,6 +1921,14 @@ footer .footerBottom a:hover {
 
   .homePageS9 .kadrFlex .itemFlex {
     padding: 15px 20px;
+    width: 100%;
+  }
+
+  .homePageS11 .kadrFlex {
+    flex-direction: column;
+  }
+
+  .homePageS11 .kadrFlex .itemFlex {
     width: 100%;
   }
 
